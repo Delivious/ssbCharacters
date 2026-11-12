@@ -1,12 +1,13 @@
 Rails.application.routes.draw do
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
   root "characters#index"
-  get "/characters/search" to: "characters#search"
-  post "/characters/downvoteI" to: "downvote#downvoteIncrement"
-  post "characters/upvoteI" to: "upvote#upvoteIncrement"
-  post "/characters/downvoteD" to: "downvote#downvoteDecrement"
-  post "characters/upvoteD" to: "upvote#upvoteDecerement"
-
+  get "/characters/search", to: "characters#search"
+  post "/characters/downvoteI", to: "downvote#downvoteIncrement"
+  post "/characters/upvoteI", to: "upvote#upvoteIncrement"
+  post "/characters/downvoteD", to: "downvote#downvoteDecrement"
+  post "/characters/upvoteD", to: "upvote#upvoteDecerement"
+  get "/accounts/loggingin", to: "accounts#loggingin"
+  get "/accounts/login", to: "accounts#login"
   resources :characters
 
   resources :accounts

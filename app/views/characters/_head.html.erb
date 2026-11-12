@@ -1,0 +1,15 @@
+<div class="row">
+    <h1>Character Ideas</h1>
+    <div class="link">
+        <%= link_to "Add a Character", new_character_path %>
+    </div>
+    <div class="link">
+        <%= link_to "New User", new_account_path %>
+    </div>
+    <div class="link">
+        <%= link_to "Log In", accounts_loggingin_path %>
+    </div>
+    <% if @account %>
+        <h2>@account.username</h2>
+    <% end %>            
+</div>

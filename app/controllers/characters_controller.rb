@@ -1,4 +1,4 @@
-class CharacterController < ApplicationController
+class CharactersController < ApplicationController
     def index
         @characters = Character.all
     end
@@ -34,6 +34,6 @@ class CharacterController < ApplicationController
     end 
     private
         def expected_params
-            params.expect(character: [:name :desc])
+            params.expect(character: [ :name, :desc ])
         end
 end

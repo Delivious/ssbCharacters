@@ -8,3 +8,47 @@
  *
  * Consider organizing styles into separate files for maintainability.
  */
+form{
+    background-color: rgb(60, 60, 60);
+    border-radius: 10px;
+    color: crimson;
+    margin: 10px;
+    padding: 10px;
+}
+input{
+    border-radius: 5px;
+    border: 1px solid white;
+}
+h1{
+    text-align: center;
+    color: white;
+}
+.row{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+body{
+    background-color: grey;
+}
+a{  
+    padding: 10px;
+    background-color: aliceblue;
+    color: rgb(20,20,20);
+    border-radius: 10px;
+    text-decoration: none;
+    margin: 10px;
+}
+a:hover{
+    transform: scale(1.1);
+    background-color: rgb(60, 60, 60);
+    transition: ease 0.2s;
+}
+.clear{
+    clear: both;
+}

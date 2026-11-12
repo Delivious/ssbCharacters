@@ -1,0 +1,18 @@
+<h1>Log In</h1>
+
+<%= form_with url: "/accounts/login", method: :get do |form| %>
+    <div class="row">
+        <%= form.label :username %>
+        <%= form.text_field :username %>
+    </div>
+    <div class="row">
+        <%= form.label :password %>
+        <%= form.text_field :password %>
+    </div>
+    <div class="row">
+        <%= form.submit %>
+    </div>
+<% end %>
+<div class="row">
+    <%= link_to "Cancel", characters_path %>
+</div>
